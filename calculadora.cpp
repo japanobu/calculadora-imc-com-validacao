@@ -15,17 +15,17 @@ int main()
  if (IMC < 18.5){
      std::cout << "Abaixo do peso ideal" << std::endl;
  }
- if ( 18.5<IMC && IMC< 24.9){
+ if ( 18.5<=IMC && IMC<= 24.9){
      std::cout << "Peso normal" << std::endl;
  }
  
- if (25< IMC && IMC < 29.9){
+ if (25<= IMC && IMC <= 29.9){
      std::cout << "Sobrepeso" << std::endl;
  }
- if (30<IMC && IMC < 34.9){
+ if (30<=IMC && IMC <= 34.9){
      std::cout << "Obesidade grau I" << std::endl;
  }
- if (35< IMC && IMC < 39.9){
+ if (35<= IMC && IMC <= 39.9){
      std::cout << "Obesidade grau II" << std::endl;
  }
  if (IMC > 40){
