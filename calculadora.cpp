@@ -9,8 +9,21 @@ int main()
  float peso, altura, IMC;
  std::cout << "Insira o valor do seu peso em kg:" << std::endl;
  std::cin >> peso;
+while (!(cin >> peso)) {          
+    cin.clear();                    
+    cin.ignore(1000, '\n');         
+    cout << "Digite apenas números: ";
+}
+
  std::cout << "Insira o valor da sua altura em metros:" << std::endl;
  std::cin >> altura;
+ while (!(cin >> altura)) {          
+    cin.clear();                    
+    cin.ignore(1000, '\n');         
+    cout << "Digite apenas números: ";
+}
+ 
+ 
  IMC = peso/pow(altura,2);
  std::cout << "Seu IMC é:" << IMC << std::endl;
  if (IMC < 18.5){
